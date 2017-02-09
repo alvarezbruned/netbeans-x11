@@ -3,8 +3,7 @@ MAINTAINER Albert Alvarez
 
 
 # Install 
-RUN apt-get update && apt-get update
-
+RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor wget
 RUN apt-get install software-properties-common -y
 RUN add-apt-repository -y ppa:webupd8team/java
 RUN apt-get update
