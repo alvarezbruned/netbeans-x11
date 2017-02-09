@@ -18,3 +18,4 @@ RUN apt-get install netbeans-installer -y
 RUN mkdir /root/.netbeans /root/.netbeans/8.1 /root/.netbeans/8.1/var
 RUN touch /root/.netbeans/8.1/var/license_accepted
 ENTRYPOINT ["/usr/bin/netbeans"]
+CMD ["--tail-log"]
