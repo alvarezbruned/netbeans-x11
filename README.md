@@ -1,5 +1,6 @@
 Netbeans-x11
 
+xhost +local:docker
 docker run -td \
     --net host \
     --cpuset-cpus 0 \
